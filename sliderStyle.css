@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Single+Day&display=swap');
+
+body{
+    font-family: 'Single Day', cursive;
+}
+
+.moodMeter{
+    font-size: 50px;
+    text-align: center;
+    margin-top : 10px;
+    margin-bottom : 0px;
+}
+
+.slideWrapper{
+    width : 100%;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.moodWrapper{
+    display : flex;
+    width : 100%;
+}
+
+.moodBoard{
+    margin : -30px auto;
+}
+
+.emoIcon{
+    width : 50px;
+    height : 50px;
+}
+
+.slider{
+    -webkit-appearance: none;
+    width : 300px;
+    height : 3px;
+    border-radius: 20px;
+    background: #684C3C;
+}
+
+.slider::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    background: #36170C;
+    cursor: pointer;
+}
+
+@media (max-width: 600px){        
+    .moodBoard{
+        margin : -30px auto;
+        width : 80%;
+    }
+    .moodMeter{
+        font-size: 30px;
+    }
+}
